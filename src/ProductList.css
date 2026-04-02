@@ -47,6 +47,17 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+.category-title{text-align: center;
+    border-top: 2px solid black;    /* Borde superior negro */
+    border-bottom: 2px solid black; /* Borde inferior negro */
+    padding: 10px 0;                /* Espacio entre el texto y los bordes */
+    margin: 50px auto;              /* Espacio exterior */
+    width: fit-content;             /* Para que el borde no ocupe todo el ancho de la pantalla */
+    padding-left: 50px;             /* Un poco de espacio a los lados */
+    padding-right: 50px;
+}
+
 .product-list {
     display: flex;
     flex-wrap: wrap;
@@ -109,6 +120,14 @@ body {
 
 .product-button:hover {
     background-color: #c0392b;
+}
+
+.product-button:disabled,
+.product-button.added {
+    background-color: #9d9d9d !important; /* Gris */
+    color: #ffffff !important; /* Texto gris oscuro */
+    cursor: not-allowed; /* Cambia el cursor a 'no permitido' */
+    border: 1px solid #282828;
 }
 
 /* Pseudo-elements - Sale badge */
